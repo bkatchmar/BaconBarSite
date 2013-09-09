@@ -1,4 +1,4 @@
-﻿div.something
+﻿header#primary nav div, header#primary nav div.sub_section
 {
     zoom:1;
     *display:inline;
