@@ -1,0 +1,12 @@
+﻿/* Highest Level Elements */
+body { background: url(/img/bg_3.jpg) repeat 0px 0px; color: #F7A08F; font-family: Arial; margin: auto; }
+header, main, footer { display: block; position: relative; width: 100%; }
+
+/* Header Specifics */
+header#primary { }
+
+/* Main Specifics */
+main#page_content { }
+
+/* Footer Specifics */
+footer { }
