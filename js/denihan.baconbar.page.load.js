@@ -4,8 +4,12 @@
     jQuery("header#primary nav div a").denihanToggle({
         target: "header#primary nav div.sub_section",
         additionalTrigger: function (on, off, target, $trigger) {
-            jQuery(target).mouseleave(function () {
-                off($trigger, target); 
+            jQuery(target).mouseleave(function (e) {
+                var targetId = e.toElement.id;
+                
+                if (targetId != "about_dropdown" && targetId != "about_menu") {
+                    off($trigger, target);
+                }
             });
         }
     });

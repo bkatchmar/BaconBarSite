@@ -11,7 +11,7 @@ header#primary div.information span.address { padding: 0px 20px 0px 0px; }
 header#primary div.information span.social { }
 header#primary nav { background-color: #401502; font-weight: bold; text-align: right; }
 header#primary nav div { display: inline-block; padding: 0px 15px; position: relative; text-transform: uppercase; }
-header#primary nav div.sub_section { background-color: #401502; border: 5px solid #F7A08F; display: inline-block; font-weight: bold; left: 0px; opacity: 0; padding: 0px; position: absolute; top: 20px; width: 200px; z-index: 20; }
+header#primary nav div.sub_section { background-color: #401502; border: 5px solid #F7A08F; display: inline-block; font-weight: bold; left: 0px; opacity: 0; padding: 0px; position: absolute; top: 19px; width: 200px; z-index: 20; }
 header#primary nav div.sub_section div.item { border-bottom: 5px solid #F7A08F; padding: 5px 10px; text-align: left; width: 90%; }
 header#primary nav div.sub_section div.item:last-child { border-bottom: none; }
 
