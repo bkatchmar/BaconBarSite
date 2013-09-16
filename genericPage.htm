@@ -14,8 +14,15 @@
 <body>
     <header id="primary">
         <div class="information">
+            <img class="logo" src="img/core/BBB-logo.png" alt="img/core/BBB-logo.png" />
             <span class="address">616 North Rush St &#183; Chicago, IL 60611 &#183; 312.660.6000</span>
             <span class="social">Follow Us For Specials:</span>
+            <span>
+                <img src="img/core/social/facebook.png" alt="Facebook" />
+                <img src="img/core/social/twitter.png" alt="Twitter" />
+                <img src="img/core/social/foursquare.png" alt="Four Square" />
+                <img src="img/core/social/instagram.png" alt="Instagram" />
+            </span>
         </div>
         <nav>
             <div>
@@ -23,7 +30,7 @@
             </div>
             <div id="about_dropdown">
                 <a href="JavaScript:void(0);" id="about_menu">About</a>
-                <div class="sub_section">
+                <div id="about_dropdown_section" class="sub_section">
                     <div class="item">Burke's Bacon Bar</div>
                     <div class="item">Press</div>
                     <div class="item">Gallery</div>
@@ -47,22 +54,37 @@
         </nav>
     </header>
     <main id="page_content">
-        <p>[Put Hero Image Here]</p>
+        <div class="hero"><img src="img/hero-about.jpg" alt="Bring home the bacon" /></div>
+        <article>
+            <header>
+                <h1>Delivery</h1>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet metus libero,
+                mattis placerat metus pulvinar quis. Sed fringilla sem eu nibh vulputate, pellentesque
+                luctus nunc mollis. Aenean scelerisque, massa at consequat vestibulum, nisl leo
+                porttitor risus, quis condimentum leo ligula a ipsum. Aliquam ornare diam ac erat
+                posuere lobortis. Nunc porttitor vehicula accumsan. Vivamus diam libero, luctus
+                a ultricies vel, lobortis in tortor. Etiam ac diam erat. Phasellus posuere nisl
+                et fringilla hendrerit.
+            </p>
+            <a href="JavaScript:void(0);">Order From Our Delivery Menu</a>
+        </article>
     </main>
     <footer>
-        <div>
-            <span>[PRIMEHOUSE | David Burke]</span>
-            <span>[David Burke]</span>
-            <span>[The James]</span>
+        <div class="logos">
+            <span><img src="img/core/primehouse-logo.png" alt="David Burke Primehouse Logo" /></span>
+            <span><img src="img/core/david-burke-logo.png" alt="David Burke Logo" /></span>
+            <span><img src="img/core/james-logo.png" alt="The James Logo" /></span>
         </div>
         <nav>
             <span>Legal</span>
             <span>Site Map</span>
             <span>Contact</span>
         </nav>
-        <div>&copy; <span class="current_year"></span> Burke's Bacon Bar</div>
+        <div>&copy; <span class="current_year"></span>Burke's Bacon Bar</div>
     </footer>
-
+    
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/modernizr.js"></script>

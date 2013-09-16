@@ -1,12 +1,20 @@
 ﻿jQuery(document).ready(function () {
     jQuery("span.current_year").denihanGetYear();
 
-    jQuery("header#primary nav div a").denihanToggle({
-        target: "header#primary nav div.sub_section",
+    jQuery("header#primary nav div#about_dropdown a").denihanToggle({
+        target: "header#primary nav div#about_dropdown_section",
         additionalTrigger: function (on, off, target, $trigger) {
+            $trigger.mouseleave(function (e) {
+                var targetId = e.toElement.id;
+
+                if (targetId != "about_dropdown_section") {
+                    off($trigger, target);
+                }
+            });
+
             jQuery(target).mouseleave(function (e) {
                 var targetId = e.toElement.id;
-                
+
                 if (targetId != "about_dropdown" && targetId != "about_menu") {
                     off($trigger, target);
                 }
