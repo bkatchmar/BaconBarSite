@@ -31,8 +31,10 @@ main#page_content div.panels span.panel_column span.panel p { color: #FFF; margi
 main#page_content div.panels span.panel_column span.panel img.gallery_image { display: block; margin: 0px auto; }
 main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; text-decoration: underline; }
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
-main#page_content div.panels span.panel_column span.panel.special { background: none; padding: 0px; width: 96%; }
-main#page_content div.panels span.panel_column span.panel.special img { width: 100%; }
+main#page_content div.panels span.panel_column span.panel.special { background: none; padding: 0px; position: relative; width: 96%; }
+main#page_content div.panels span.panel_column span.panel.special h1 { background: rgba(64,21,2,.8); padding: 5px 0px; position: absolute; width: 100%; z-index: 10; }
+main#page_content div.panels span.panel_column span.panel.special h1 span { padding: 0px 0px 0px 20px; }
+main#page_content div.panels span.panel_column span.panel.special img { position: absolute; width: 100%; z-index: 5; }
 
 /* Footer Specifics */
 footer { font-size: 10pt; }
