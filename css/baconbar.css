@@ -5,27 +5,49 @@ a:link { color: #F7A08F; text-decoration: none; }
 a:visited { color: #F7A08F; text-decoration: none; }
 
 /* Header Specifics */
-header#primary { height: 120px; padding: 15px 0px 0px 0px; z-index: 10; }
-header#primary div.information { font-weight: bold; height: 85px; text-align: right; text-transform: uppercase; }
+header#primary { font-family: "Frutiger LT W01 65 Bold"; height: 120px; padding: 15px 0px 0px 0px; z-index: 10; }
+header#primary div.information { height: 85px; text-align: right; text-transform: uppercase; }
 header#primary div.information span { display: inline-block; font-size: 14px; vertical-align: top; }
 header#primary div.information span.address { padding: 5px 25px 0px 0px; }
 header#primary div.information span.social { padding: 5px 0px 0px 0px; }
 header#primary div.information img.logo { float: left; }
-header#primary nav { background-color: #401502; font-weight: bold; text-align: right; }
+header#primary nav { background-color: #401502; text-align: right; }
 header#primary nav div { display: inline-block; padding: 0px 15px; position: relative; text-transform: uppercase; }
-header#primary nav div.sub_section { background-color: #401502; border: 5px solid #F7A08F; display: inline-block; font-weight: bold; left: 0px; opacity: 0; padding: 0px; position: absolute; top: 19px; width: 200px; z-index: 20; }
+header#primary nav div.sub_section { background-color: #401502; border: 5px solid #F7A08F; display: inline-block; left: 0px; opacity: 0; padding: 0px; position: absolute; top: 19px; width: 200px; z-index: 20; }
 header#primary nav div.sub_section div.item { border-bottom: 5px solid #F7A08F; padding: 5px 10px; text-align: left; width: 90%; }
 header#primary nav div.sub_section div.item:last-child { border-bottom: none; }
 
 /* Main Specifics */
 main#page_content div.hero img { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 100%; }
-main#page_content article header h1 { text-transform: uppercase; }
-main#page_content article p { color: #FFF; margin: 5px 0px 20px; width: 50%; }
-main#page_content article a:link { background-color: #F7A08F; color: #401502; font-weight: bold; padding: 8px; text-transform: uppercase; }
+main#page_content div.hero.home img { border: none; }
+main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-weight: normal; text-transform: uppercase; }
+main#page_content article p { color: #FFF; font-size: 12pt; margin: 5px 0px 20px; width: 60%; }
+main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
+main#page_content div.panels { width: 100%; }
+main#page_content div.panels span.panel_column { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 33%; }
+main#page_content div.panels span.panel_column span.panel { background: url(../img/core/feed-burke-woodbg.png) repeat 0px 0px; display: inline-block; font-size: 10pt; margin: 0px 0px 10px; padding: 10px; vertical-align: top; width: 90%; }
+main#page_content div.panels span.panel_column span.panel h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 16px; font-weight: normal; margin: 0px; text-transform: uppercase; }
+main#page_content div.panels span.panel_column span.panel p { color: #FFF; margin: 10px 0px; }
+main#page_content div.panels span.panel_column span.panel img.gallery_image { display: block; margin: 0px auto; }
+main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; text-decoration: underline; }
+main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
+main#page_content div.panels span.panel_column span.panel.special { background: none; padding: 0px; width: 96%; }
+main#page_content div.panels span.panel_column span.panel.special img { width: 100%; }
 
 /* Footer Specifics */
+footer { font-size: 10pt; }
 footer div { text-align: center; text-transform: uppercase; }
 footer div.logos { padding: 10px 0px; }
 footer div.logos span { padding: 0px 20px; }
 footer nav { text-align: center; }
 footer nav span { padding: 0px 10px; text-transform: uppercase; }
+
+/* Placeholder Text */
+::-webkit-input-placeholder { color: #481301; }
+::-moz-placeholder { color: #481301; } /* FireFox 19+ */
+:-ms-input-placeholder { color: #481301; } /* IE */
+input:-moz-placeholder { color: #481301; }
+.placeholder { color: #481301; }
+
+/* Input Fields */
+input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; margin: 0px; padding: 5px; }
