@@ -18,30 +18,33 @@ header#primary nav div.sub_section div.item { border-bottom: 5px solid #F7A08F; 
 header#primary nav div.sub_section div.item:last-child { border-bottom: none; }
 
 /* Main Specifics */
-main#page_content div.hero img { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 100%; }
-main#page_content div.hero.home img { border: none; }
+main#page_content div.hero { padding: 15px 0px 10px; position: relative; }
+main#page_content div.hero img.main { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; position: relative; width: 100%; z-index: 5; }
+main#page_content div.hero img.tag { left: 10px; position: absolute; top: 0px; z-index: 10; }
+main#page_content div.hero.home img { border: none; width: 100%; }
+main#page_content article { position: relative; }
 main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-weight: normal; text-transform: uppercase; }
 main#page_content article p { color: #FFF; font-size: 12pt; margin: 5px 0px 20px; width: 60%; }
 main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
-main#page_content div.panels { width: 100%; }
-main#page_content div.panels span.panel_column { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 33%; }
-main#page_content div.panels span.panel_column span.panel { background: url(../img/core/feed-burke-woodbg.png) repeat 0px 0px; display: inline-block; font-size: 10pt; margin: 0px 0px 10px; padding: 10px; vertical-align: top; width: 90%; }
-main#page_content div.panels span.panel_column span.panel h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 16px; font-weight: normal; margin: 0px; text-transform: uppercase; }
-main#page_content div.panels span.panel_column span.panel p { color: #FFF; margin: 10px 0px; }
-main#page_content div.panels span.panel_column span.panel img.gallery_image { display: block; margin: 0px auto; }
+
+/* Home Page Panels */
+main#page_content div.panels { text-align: center; width: 100%; }
+main#page_content div.panels span.panel_column { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 32%; }
+main#page_content div.panels span.panel_column span.panel { background: url(../img/core/feed-burke-woodbg.png) repeat 0px 0px; display: inline-block; font-size: 10pt; margin: 0px 0px 10px; padding: 0px; vertical-align: top; width: 100%; }
+main#page_content div.panels span.panel_column span.panel h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 16px; font-weight: normal; margin: 0px; padding: 5px 10px; text-align: left; text-transform: uppercase; }
+main#page_content div.panels span.panel_column span.panel p { color: #FFF; padding: 0px 10px; text-align: left; }
+main#page_content div.panels span.panel_column span.panel table { padding: 0px 10px 10px; }
+main#page_content div.panels span.panel_column span.panel img { display: block; padding: 0px 10px; }
+main#page_content div.panels span.panel_column span.panel img.gallery_image { margin: 0px auto 20px; }
 main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; text-decoration: underline; }
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
-main#page_content div.panels span.panel_column span.panel.special { background: none; padding: 0px; position: relative; width: 96%; }
-main#page_content div.panels span.panel_column span.panel.special h1 { background: rgba(64,21,2,.8); padding: 5px 0px; position: absolute; width: 100%; z-index: 10; }
-main#page_content div.panels span.panel_column span.panel.special h1 span { padding: 0px 0px 0px 20px; }
-main#page_content div.panels span.panel_column span.panel.special img { position: absolute; width: 100%; z-index: 5; }
 
 /* Footer Specifics */
 footer { font-size: 10pt; }
 footer div { text-align: center; text-transform: uppercase; }
 footer div.logos { padding: 10px 0px; }
 footer div.logos span { padding: 0px 20px; }
-footer nav { text-align: center; }
+footer nav { padding: 10px 0px; text-align: center; }
 footer nav span { padding: 0px 10px; text-transform: uppercase; }
 
 /* Placeholder Text */
