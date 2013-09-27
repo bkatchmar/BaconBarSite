@@ -35,6 +35,7 @@ main#page_content div.panels span.panel_column span.panel h1 { font-family: "Tra
 main#page_content div.panels span.panel_column span.panel p { color: #FFF; padding: 0px 10px; text-align: left; }
 main#page_content div.panels span.panel_column span.panel table { padding: 0px 10px 10px; }
 main#page_content div.panels span.panel_column span.panel img { display: block; padding: 0px 10px; }
+main#page_content div.panels span.panel_column span.panel img.sandwich {position: relative; top: -30px; z-index: 0; padding: 0px 0px;}
 main#page_content div.panels span.panel_column span.panel img.gallery_image { margin: 0px auto 20px; }
 main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; text-decoration: underline; }
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
