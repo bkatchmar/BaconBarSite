@@ -12,10 +12,13 @@ header#primary div.information span.address { padding: 5px 25px 0px 0px; }
 header#primary div.information span.social { padding: 5px 0px 0px 0px; }
 header#primary div.information img.logo { float: left; }
 header#primary nav { background-color: #401502; text-align: right; }
-header#primary nav div { display: inline-block; padding: 0px 15px; position: relative; text-transform: uppercase; }
+header#primary nav div { display: inline-block; position: relative; text-transform: uppercase; }
+header#primary nav div a#about_menu:hover { background-color: #F7A08F; color: #FFF; }
 header#primary nav div.sub_section { background-color: #401502; border: 5px solid #F7A08F; display: inline-block; left: 0px; opacity: 0; padding: 0px; position: absolute; top: 19px; width: 200px; z-index: 20; }
 header#primary nav div.sub_section div.item { border-bottom: 5px solid #F7A08F; padding: 5px 10px; text-align: left; width: 90%; }
 header#primary nav div.sub_section div.item:last-child { border-bottom: none; }
+header#primary nav div a { padding: 0px 15px; }
+header#primary nav div a.selected { color: #FFF; }
 
 /* Main Specifics */
 main#page_content div.hero { padding: 15px 0px 10px; position: relative; }
@@ -23,9 +26,13 @@ main#page_content div.hero img.main { border: 10px solid #401502; border-bottom-
 main#page_content div.hero img.tag { left: 10px; position: absolute; top: 0px; z-index: 10; }
 main#page_content div.hero.home img { border: none; width: 100%; }
 main#page_content article { position: relative; }
-main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-weight: normal; text-transform: uppercase; }
+main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 main#page_content article p { color: #FFF; font-size: 12pt; margin: 5px 0px 20px; width: 60%; }
 main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
+main#page_content article section { display: inline-block; margin: 0px; padding: 0px 20px 0px 0px; vertical-align: top; width: 45%; }
+main#page_content article section header { width: 100%; }
+main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
+main#page_content article section img { margin: 0px 0px 10px; }
 
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; }
