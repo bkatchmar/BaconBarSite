@@ -27,7 +27,7 @@
         </div>
         <nav>
             <div>
-                <a href="index.htm" class="selected">Home</a>
+                <a href="index.htm">Home</a>
             </div>
             <div id="about_dropdown">
                 <a href="about.htm" id="about_menu">About</a>
@@ -41,7 +41,7 @@
                 <a href="#">Menus</a>
             </div>
             <div>
-                <a href="location.htm">Location</a>
+                <a href="location.htm" class="selected">Location</a>
             </div>
             <div>
                 <a href="delivery.htm">Delivery</a>
@@ -55,39 +55,32 @@
         </nav>
     </header>
     <main id="page_content">
-        <div class="hero home"><img src="img/hero-home-night-pigout.png" alt="Bring home the bacon" /></div>
-        <div class="panels">
-            <span class="panel_column">
-                <span class="panel">
-                    <h1>Sign-Up</h1>
-                    <p>Praesent at metus et ipsum suscipit pulvinar. Vivamus sed psuere enim.</p>
-                    <table>
-                        <tr>
-                            <td valign="top"><input type="text" placeholder="EMAIL ADDRESS" /></td>
-                            <td valign="top"><img src="img/core/signup-submit-bttn.gif" alt="Submit Email" /></td>
-                        </tr>
-                    </table>
-                </span>
-                <span class="panel nowood">
-                    <h1>We Deliver</h1>
-                   <img class="sandwich" src="img/we-deliver-sandwich.jpg" alt="Burkes Bacon Bar Delivers" />
-                </span>
-            </span>
-            <span class="panel_column">
-                <span class="panel">
-                    <h1>Feed</h1>
-                    <img src="img/gallery/feed-photo-1.jpg" alt="Food" class="gallery_image" />
-                </span>
-            </span>
-            <span class="panel_column">
-                <span class="panel">
-                    <h1>Meet Chef David Burke</h1>
-                    <img src="img/core/burke-photo.jpg" alt="Chef David Burke" />
-                    <p>Prawsent at metus et ipsum suscipit pulvinar. Vivamus sed posuere enim. Nam ut mauris ut uma pharetra pretium eget quis libero. Integer tempor, augue a vehicula tincidunt, dui nisi bibendum tortor, eget omare erat magna eu massa.</p>
-                    <p><a href="#">Read More</a></p>
-                </span>
-            </span>
+        <div class="hero home">
+            [Put Google Maps Here]
         </div>
+        <article>
+            <section>
+                <header>
+                    <h1>Location</h1>
+                </header>
+                <div class="address">
+                    <div>616 North Rush St</div>
+                    <div>Chicago, IL 60611</div>
+                    <div>At The James</div>
+                    <div>312.660.6000</div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium eleifend urna, vulputate aliquet odio adipiscing ut. Nulla porta fringilla semper. Maecenas viverra est nec tortor fringilla, eget tristique leo fermentum. Vestibulum id ante volutpat, luctus nulla ac, adipiscing dui. Cras tincidunt ante leo, ac facilisis eros eleifend quis. Maecenas nibh enim, ultricies eget feugiat at, luctus nec ipsum. Donec dui justo, cursus id urna vel, euismod dictum libero. Ut varius, diam eu tristique bibendum, erat libero rutrum elit, sed feugiat tellus elit pellentesque ante. Etiam ullamcorper justo et orci facilisis feugiat. Donec pellentesque urna viverra, aliquet erat non, accumsan purus. Maecenas cursus euismod tempor. Phasellus non urna dolor. Sed sit amet dignissim quam, sit amet pretium sapien.
+                </p>
+            </section>
+            <section>
+                <header>
+                    <h1>Feed</h1>
+                </header>
+                <img src="img/gallery/feed-photo-1.jpg" alt="Feed 1" width="215" />
+                <img src="img/gallery/feed-photo-1.jpg" alt="Feed 1" width="215" />
+            </section>
+        </article>
     </main>
     <footer>
         <div class="logos">
@@ -102,7 +95,6 @@
         </nav>
         <div>&copy;&nbsp;<span class="current_year"></span>&nbsp;Burke&rsquo;s Bacon Bar</div>
     </footer>
-    
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/modernizr.js"></script>

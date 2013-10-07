@@ -33,6 +33,9 @@ main#page_content article section { display: inline-block; margin: 0px; padding:
 main#page_content article section header { width: 100%; }
 main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
 main#page_content article section img { margin: 0px 0px 10px; }
+main#page_content article section div.address { font-family: "Frutiger LT W01 65 Bold"; padding: 0px 0px 10px; }
+main#page_content article section div.contact-form div { padding: 10px 0px; }
+main#page_content article section div.contact-form div input[type="text"] { font-weight: bold; width: 250px; }
 
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; }
