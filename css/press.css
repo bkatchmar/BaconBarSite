@@ -1,0 +1,7 @@
+﻿main#page_content article.press section { border-bottom: 1px solid #F7A08F; padding: 50px 0px; width: 100%; }
+main#page_content article.press section:last-child { border: none; }
+main#page_content article.press section header { display: inline-block; float: left; height: 150px; width: 285px; }
+main#page_content article.press section header img { border: 10px solid #200400; height: 100%; margin: 0px; padding: 0px; width: 100%; }
+main#page_content article.press section h2, main#page_content article.press section p { padding: 0px 0px 0px 340px; width: 640px; }
+main#page_content article.press section h2 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; }
+main#page_content article.press section p a { background: none; color: #F7A08F; font-family: Arial; font-size: 12pt; font-weight: normal; padding: 0px; text-decoration: underline; text-transform: capitalize; }
