@@ -30,16 +30,16 @@
             <div>
                 <a href="index.htm">Home</a>
             </div>
-            <div id="about_dropdown">
-                <a href="about.htm" id="about_menu" class="selected">About</a>
+            <div id="about_dropdown" class="dropdownTrigger">
+                <a href="about.htm" id="about_menu" class="dropdownTrigger selected">About</a>
                 <div id="about_dropdown_section" class="sub_section">
-                    <div class="item">Burke's Bacon Bar</div>
-                    <div class="item">Press</div>
-                    <div class="item">Gallery</div>
+                    <div class="item"><a href="about.htm">Burke's Bacon Bar</a></div>
+                    <div class="item"><a href="press.htm">Press</a></div>
+                    <div class="item"><a href="gallery.htm">Gallery</a></div>
                 </div>
             </div>
             <div>
-                <a href="#">Menus</a>
+                <a href="menus.htm">Menus</a>
             </div>
             <div>
                 <a href="location.htm">Location</a>
@@ -48,15 +48,32 @@
                 <a href="delivery.htm">Delivery</a>
             </div>
             <div>
-                <a href="#">Catering</a>
+                <a href="catering.htm">Catering</a>
             </div>
             <div>
-                <a href="#">Gift Cards</a>
+                <a href="gift-cards.htm">Gift Cards</a>
             </div>
         </nav>
     </header>
     <main id="page_content" class="imageGallery">
         <div class="image"><img src="img/hero-about.jpg" alt="Bring home the bacon" /></div>
+        
+        <div class="image_carousel">
+            <div id="foo2">
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/feed-photo-1.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/feed-photo-1.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/hero-about.jpg" alt="bacon" width="140" height="140" />
+                <img src="img/gallery/main/feed-photo-1.jpg" alt="bacon" width="140" height="140" />
+            </div>
+            <div class="clearfix"></div>
+            <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
+            <a class="next" id="foo2_next" href="#"><span>next</span></a>
+        </div>
     </main>
     <footer>
         <div class="logos">
@@ -78,7 +95,7 @@
     <script src="js/denihan.baconbar.year.js"></script>
     <script src="js/denihan.baconbar.toggler.js"></script>
     <script src="js/denihan.gallery.tiled.js"></script>
-    <script src="js/carouFredSel.js"></script>
+    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
     <script src="js/denihan.baconbar.page.load.js"></script>
 </body>
 </html>
