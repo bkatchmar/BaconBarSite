@@ -22,7 +22,7 @@
         }
     });
 
-    // Gallery Plugin
+   // Gallery Plugin
     if (jQuery("div#foo2").length > 0) {
         jQuery("div#foo2").carouFredSel({
             circular: false,
