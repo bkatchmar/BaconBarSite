@@ -1,4 +1,5 @@
 ﻿/* Highest Level Elements */
+html {overflow-y: scroll; }
 body { background: #401502 url(../img/core/bg_3.jpg) repeat 0px 0px; color: #F7A08F; font-family: Arial; margin: auto; }
 header, main, footer { display: block; margin: 0px auto; position: relative; width: 980px; z-index: 1; }
 a:link { color: #F7A08F; text-decoration: none; }
@@ -23,20 +24,25 @@ header#primary nav div#about_dropdown div#about_dropdown_section a { padding: 0p
 
 /* Main Specifics */
 main#page_content div.hero { padding: 15px 0px 10px; position: relative; }
+main#page_content div.hero #googlemap.gmap3{ margin: 0px auto; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 980px; height: 373px; }
 main#page_content div.hero img.main { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; position: relative; width: 100%; z-index: 5; }
 main#page_content div.hero img.tag { left: 10px; position: absolute; top: 0px; z-index: 10; }
+main#page_content div.hero img.tag2 { left: 0px; position: absolute; top: 0px; z-index: 10; }
 main#page_content div.hero.home img { border: none; width: 100%; }
 main#page_content article { position: relative; }
 main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; }
-main#page_content article p { color: #FFF; font-size: 12pt; margin: 5px 0px 20px; width: 60%; }
+main#page_content article p { color: #FFF; font-size: 11pt; line-height:1.2; margin: 5px 0px 20px; width: 60%; }
 main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
+
 main#page_content article section { display: inline-block; margin: 0px; padding: 0px 20px 0px 0px; vertical-align: top; width: 45%; }
 main#page_content article section header { width: 100%; }
 main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
 main#page_content article section img { margin: 0px 0px 10px; }
+main#page_content article section img.menu_thumb { padding: 20px 0px 0px 80px; }
 main#page_content article section div.address { font-family: "Frutiger LT W01 65 Bold"; padding: 0px 0px 10px; }
 main#page_content article section div.contact-form div { padding: 10px 0px; }
 main#page_content article section div.contact-form div input[type="text"] { font-weight: bold; width: 250px; }
+main#page_content article section a:link {background-color: transparent; }
 
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; }
@@ -45,7 +51,7 @@ main#page_content div.panels span.panel_column span.panel { background: url(../i
 main#page_content div.panels span.panel_column span.panel h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 16px; font-weight: normal; margin: 0px; padding: 5px 10px; position: relative; text-align: left; text-transform: uppercase; z-index: 1; }
 main#page_content div.panels span.panel_column span.panel p { color: #FFF; padding: 0px 10px; text-align: left; }
 main#page_content div.panels span.panel_column span.panel table { padding: 0px 10px 21px; }
-main#page_content div.panels span.panel_column span.panel img { display: block; padding: 0px 10px; }
+main#page_content div.panels span.panel_column span.panel img { display: block; padding: 0px 10px;}
 main#page_content div.panels span.panel_column span.panel img.button-previous, main#page_content div.panels span.panel_column span.panel img.button-next { cursor: pointer; display: inline; float: right; padding: 5px 3px; position: relative; z-index: 2; }
 main#page_content div.panels span.panel_column span.panel img.button-next { padding-right: 20px; }
 main#page_content div.panels span.panel_column span.panel img.sandwich {position: relative; top: -30px; padding: 0px 0px; width: 100%; z-index: 0;}
@@ -72,3 +78,29 @@ input:-moz-placeholder { color: #481301; }
 
 /* Input Fields */
 input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; margin: 0px; padding: 5px; }
+
+
+/*Bacon types for menu page*/
+main#page_content article #featured-bacons { background: url(../img/featured-bacons.png); font-family: "Frutiger LT W01 65 Bold"; text-transform: uppercase; font-size: 11px; text-align: center; width: 526px; height: width: 162px; padding-top: 162px; margin-top: 30px; position: relative; }
+main#page_content article #featured-bacons span.bacon1 { position: absolute; top: 68px; left: 22px; width: 90px; }
+main#page_content article #featured-bacons span.bacon2 { position: absolute; top: 68px; left: 165px; width: 70px; }
+main#page_content article #featured-bacons span.bacon3 { position: absolute; top: 68px; left: 274px; width: 105px; }
+main#page_content article #featured-bacons span.bacon4 { position: absolute; top: 68px; left: 402px; width: 110px; }
+
+/*Gradient Box for Gift Card page */
+main#page_content div.hero div.giftcard { 
+height: 400px; text-align: center;
+background: rgb(147,65,50); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(147,65,50,1) 0%, rgba(197,115,100,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(147,65,50,1)), color-stop(100%,rgba(197,115,100,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#934132', endColorstr='#c57364',GradientType=0 ); /* IE6-9 */
+}
+main#page_content div.hero div.giftcard img { padding: 30px 0px 35px 0px;  } 
+
+
+
+
