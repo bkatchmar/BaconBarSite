@@ -79,7 +79,6 @@ input:-moz-placeholder { color: #481301; }
 /* Input Fields */
 input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; margin: 0px; padding: 5px; }
 
-
 /*Bacon types for menu page*/
 main#page_content article #featured-bacons { background: url(../img/featured-bacons.png); font-family: "Frutiger LT W01 65 Bold"; text-transform: uppercase; font-size: 11px; text-align: center; width: 526px; height: width: 162px; padding-top: 162px; margin-top: 30px; position: relative; }
 main#page_content article #featured-bacons span.bacon1 { position: absolute; top: 68px; left: 22px; width: 90px; }
@@ -88,8 +87,7 @@ main#page_content article #featured-bacons span.bacon3 { position: absolute; top
 main#page_content article #featured-bacons span.bacon4 { position: absolute; top: 68px; left: 402px; width: 110px; }
 
 /*Gradient Box for Gift Card page */
-main#page_content div.hero div.giftcard { 
-height: 400px; text-align: center;
+main#page_content div.hero div.giftcard { height: 400px; text-align: center;
 background: rgb(147,65,50); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(147,65,50,1) 0%, rgba(197,115,100,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(147,65,50,1)), color-stop(100%,rgba(197,115,100,1))); /* Chrome,Safari4+ */
