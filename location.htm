@@ -4,19 +4,47 @@
     <title>Bacon Bar Generic Page</title>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
-    <![endif]-->
+    <![endif]--> 
+    <script src="js/jquery-1.7.2.min.js"></script>  
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> 
+    <script type="text/javascript" src="js/gmap3.js"></script> 
     <link rel="Stylesheet" href="css/baconbar.css" />
     <link rel="Stylesheet" href="css/fonts.css" />
     <!--[if lte IE 7]>
     <link rel="stylesheet" href="css/baconbar.ie.css" />
     <![endif]-->
+ 	
+    <script type="text/javascript">
+	 $(function(){
+
+	      	$('#googlemap').gmap3({
+            map:{
+                options:{
+                        streetViewControl: false,
+                        mapTypeControl: false,
+                        zoomControlOptions: {
+                        	position: google.maps.ControlPosition.LEFT_CENTER
+                        },
+                    zoom: 16, center:[41.89287,-87.62543]
+                }
+            },
+            marker:{
+                latLng: [41.89287,-87.62543],
+                options: {
+                        icon: new google.maps.MarkerImage("img/bbb_marker.png")
+                    }
+            }
+        });
+	 });
+
+	      </script>
     <meta charset="UTF-8" />
 </head>
 <body>
     <header id="primary">
         <div class="information">
             <img class="logo" src="img/core/BBB-logo.png" alt="img/core/BBB-logo.png" />
-            <span class="address">616 North Rush St &#183; Chicago, IL 60611 &#183; 312.660.6000</span>
+            <span class="address">610 North Rush St &#183; Chicago, IL 60611 &#183; 312.660.6000</span>
             <span class="social">Follow Us For Specials:</span>
             <span>
                 <img src="img/core/social/facebook.png" alt="Facebook" />
@@ -56,7 +84,7 @@
     </header>
     <main id="page_content">
         <div class="hero home">
-            [Put Google Maps Here]
+       		<div id="googlemap" class="gmap3"></div>   
         </div>
         <article>
             <section>
@@ -64,7 +92,7 @@
                     <h1>Location</h1>
                 </header>
                 <div class="address">
-                    <div>616 North Rush St</div>
+                    <div>610 North Rush St</div>
                     <div>Chicago, IL 60611</div>
                     <div>At The James</div>
                     <div>312.660.6000</div>
@@ -95,11 +123,12 @@
         </nav>
         <div>&copy;&nbsp;<span class="current_year"></span>&nbsp;Burke&rsquo;s Bacon Bar</div>
     </footer>
-    <script src="js/jquery-1.7.2.min.js"></script>
+
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/denihan.baconbar.year.js"></script>
     <script src="js/denihan.baconbar.toggler.js"></script>
     <script src="js/denihan.baconbar.page.load.js"></script>
+    
 </body>
 </html>
