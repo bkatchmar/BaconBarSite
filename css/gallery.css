@@ -1,13 +1,13 @@
-﻿main#page_content.imageGallery div.image img { height: 350px; width: 100%; }
-.image_carousel { background-color: #000;  padding: 15px 90px; position: relative; }
-.image_carousel img { border: none; background-color: white; padding: 0px; margin: 7px; display: block; float: left; }
+﻿main#page_content.imageGallery div.image img { height: 350px; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; }
+.image_carousel { background-color: #000; position: relative; width: 97%; margin: 0px 0px 0px;  padding: 10px 10px 10px 40px; top: 10px;}
+.image_carousel img { border: none; background-color: #000; padding: 0px; margin: 6px 6px 6px 6px; display: block; float: left; position: relative; left: 5px; }
 a.prev { background: url(../img/gallery/controls/arrow-prev.jpg) no-repeat transparent; width: 45px; height: 90px; display: block; position: absolute; top: 50px; }
 a.next { background: url(../img/gallery/controls/arrow-next.jpg) no-repeat transparent; width: 45px; height: 90px; display: block; position: absolute; top: 50px; }
 a.prev { left: 0px; background-position: 0px 0px; }
-a.next { right: 0px; background-position: 0px 0px; }
+a.next { right: -8px; background-position: 0px 0px; }
 a.prev span, a.next span { display: none; }
 .pagination { text-align: center; }
-.pagination a { background: url(../img/miscellaneous_sprite.png) 0px -300px no-repeat transparent; width: 15px; height: 15px; margin: 0px 5px 0px 0px; display: inline-block; }
+.pagination a { background: url(../img/miscellaneous_sprite.png) 0px -300px no-repeat transparent; width: 15px; height: 15px; margin: 0px; display: inline-block; }
 .pagination a.selected { background-position: -25px -300px; cursor: default; }
 .pagination a span { display: none; }
 .clearfix { float: none; clear: both; }

@@ -36,12 +36,12 @@
                 button: "#foo2_next",
                 key: "right"
             },
-            pagination: "#foo2_pag"
+            pagination: {
+				container: "#foo2_pag",	
+			}
         });
-
-        jQuery("div.image_carousel div#foo2 img").changeHero();
+       jQuery("div.image_carousel div#foo2 img").changeHero();
     }
-
     modernizr();
 });
 
@@ -70,3 +70,73 @@ function modernizr() {
         });
     }
 }
+
+
+var clicked = false;
+$(".img-swap").click(function(){
+  if(!clicked)
+    $(this).addClass("clicked")
+  else
+    this.src.replace("-off","-on");
+});
+
+
+$(".img-swap").hover(function () {
+      this.src = this.src.replace("-off","-on");
+  }, function () {
+     if(!$(this).hasClass("clicked"))	 
+       this.src = this.src.replace("-on","-off");
+ });
+
+
+jQuery(function(){
+	$("#pig2").click(function() {
+		$("#pig3").attr("src","img/core/pig-3-off.png");
+		$("#pig1").attr("src","img/core/pig-1-off.png");
+		$("#pig1").removeClass("clicked");
+		$("#pig3").removeClass("clicked");
+		$("#hero-main").fadeOut(200, function() {
+			$("#hero-main").attr("src",$("#hero2").attr("href"));
+		}).fadeIn(200);
+		return false;
+	});
+	$("#pig1").click(function() {
+		$("#pig3").attr("src","img/core/pig-3-off.png");
+		$("#pig2").attr("src","img/core/pig-2-off.png");
+		$("#pig2").removeClass("clicked");
+		$("#pig3").removeClass("clicked");
+		$("#hero-main").fadeOut(200, function() {
+			$("#hero-main").attr("src",$("#hero1").attr("href"));
+		}).fadeIn(200);
+		return false;
+	});
+	$("#pig3").click(function() {
+		$("#pig1").attr("src","img/core/pig-1-off.png");
+		$("#pig2").attr("src","img/core/pig-2-off.png");
+		$("#pig2").removeClass("clicked");
+		$("#pig1").removeClass("clicked");
+		$("#hero-main").fadeOut(200, function() {
+			$("#hero-main").attr("src",$("#hero3").attr("href"));
+		}).fadeIn(200);
+		return false;
+	});
+});
+
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        new Image().src = this;
+    });
+}
+
+$(document).ready(function(){
+	var d = new Date();    // defaults to the current time in the current timezone
+	if (d.getHours() >= 19 ) {
+    	//show nightime pig hero
+    	$("#hero-main").attr("src","img/hero-home-night.jpg");
+    	$("#pig2").attr("src","img/core/pig-2-on.png");
+	} else {
+    	//show daytime pig hero
+    	$("#hero-main").attr("src","img/hero-home-day.jpg");
+    	$("#pig1").attr("src","img/core/pig-1-on.png");
+	}
+});

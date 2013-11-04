@@ -23,6 +23,7 @@
         function initialize($el) {
             $el.click(function() {
                 var src = $el.attr("src");
+                src = src.replace( "/small/", "/large/");
                 $("main#page_content.imageGallery div.image img").attr("src", src);
             });
         }
