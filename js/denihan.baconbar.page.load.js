@@ -71,7 +71,6 @@ function modernizr() {
     }
 }
 
-
 var clicked = false;
 $(".img-swap").click(function(){
   if(!clicked)
@@ -81,15 +80,8 @@ $(".img-swap").click(function(){
 });
 
 
-$(".img-swap").hover(function () {
-      this.src = this.src.replace("-off","-on");
-  }, function () {
-     if(!$(this).hasClass("clicked"))	 
-       this.src = this.src.replace("-on","-off");
- });
-
-
 jQuery(function(){
+	$("#pig1").attr("src","img/core/pig-1-on.png"); 
 	$("#pig2").click(function() {
 		$("#pig3").attr("src","img/core/pig-3-off.png");
 		$("#pig1").attr("src","img/core/pig-1-off.png");
@@ -122,21 +114,63 @@ jQuery(function(){
 	});
 });
 
+//only do this if we're on the home page
+
+$(document).ready(function(){
+var docName = returnDocument();
+if (docName=="index.htm") {
+	var d = new Date();    // defaults to the current time in the current timezone
+	if (d.getHours() >= 19  && d.getHours() < 7 ) {
+		//show nightime pig hero
+		$("#pig1").attr("src","img/core/pig-1-off.png"); 
+		$("#hero-main").attr("src","img/hero-home-night.jpg");
+		$("#pig2").attr("src","img/core/pig-2-on.png");
+	} else {
+		//show daytime pig hero
+		$("#hero-main").attr("src","img/hero-home-day.jpg");
+		$("#pig1").attr("src","img/core/pig-1-on.png");
+	}
+}
+});
+
+
+function returnDocument() {
+        var file_name = document.location.href;
+        var end = (file_name.indexOf("?") == -1) ? file_name.length : file_name.indexOf("?");
+        return file_name.substring(file_name.lastIndexOf("/")+1, end);
+ }
+
+$(".img-swap").hover(function () {
+      this.src = this.src.replace("-off","-on");
+  }, function () {
+     if(!$(this).hasClass("clicked"))	 
+       this.src = this.src.replace("-on","-off");
+ });
+ 
+
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         new Image().src = this;
     });
 }
 
-$(document).ready(function(){
-	var d = new Date();    // defaults to the current time in the current timezone
-	if (d.getHours() >= 19 ) {
-    	//show nightime pig hero
-    	$("#hero-main").attr("src","img/hero-home-night.jpg");
-    	$("#pig2").attr("src","img/core/pig-2-on.png");
-	} else {
-    	//show daytime pig hero
-    	$("#hero-main").attr("src","img/hero-home-day.jpg");
-    	$("#pig1").attr("src","img/core/pig-1-on.png");
+$(function(){
+	$('#googlemap').gmap3({
+	map:{
+		options:{
+				streetViewControl: false,
+				mapTypeControl: false,
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.LEFT_CENTER
+				},
+			zoom: 16, center:[41.89287,-87.62543]
+		}
+	},
+	marker:{
+		latLng: [41.89287,-87.62543],
+		options: {
+				icon: new google.maps.MarkerImage("img/bbb_marker.png")
+			}
 	}
+});
 });
