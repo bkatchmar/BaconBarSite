@@ -21,8 +21,8 @@
             });
         }
     });
-
-   // Gallery Plugin
+    
+    // Gallery Plugin
     if (jQuery("div#foo2").length > 0) {
         jQuery("div#foo2").carouFredSel({
             circular: false,
@@ -42,6 +42,10 @@
         });
        jQuery("div.image_carousel div#foo2 img").changeHero();
     }
+
+    //Hero Pig Plugin
+    jQuery("main#page_content div.pignav").denihanPigGallery();
+
     modernizr();
 });
 
@@ -71,51 +75,7 @@ function modernizr() {
     }
 }
 
-var clicked = false;
-$(".img-swap").click(function(){
-  if(!clicked)
-    $(this).addClass("clicked")
-  else
-    this.src.replace("-off","-on");
-});
-
-
-jQuery(function(){
-	$("#pig1").attr("src","img/core/pig-1-on.png"); 
-	$("#pig2").click(function() {
-		$("#pig3").attr("src","img/core/pig-3-off.png");
-		$("#pig1").attr("src","img/core/pig-1-off.png");
-		$("#pig1").removeClass("clicked");
-		$("#pig3").removeClass("clicked");
-		$("#hero-main").fadeOut(200, function() {
-			$("#hero-main").attr("src",$("#hero2").attr("href"));
-		}).fadeIn(200);
-		return false;
-	});
-	$("#pig1").click(function() {
-		$("#pig3").attr("src","img/core/pig-3-off.png");
-		$("#pig2").attr("src","img/core/pig-2-off.png");
-		$("#pig2").removeClass("clicked");
-		$("#pig3").removeClass("clicked");
-		$("#hero-main").fadeOut(200, function() {
-			$("#hero-main").attr("src",$("#hero1").attr("href"));
-		}).fadeIn(200);
-		return false;
-	});
-	$("#pig3").click(function() {
-		$("#pig1").attr("src","img/core/pig-1-off.png");
-		$("#pig2").attr("src","img/core/pig-2-off.png");
-		$("#pig2").removeClass("clicked");
-		$("#pig1").removeClass("clicked");
-		$("#hero-main").fadeOut(200, function() {
-			$("#hero-main").attr("src",$("#hero3").attr("href"));
-		}).fadeIn(200);
-		return false;
-	});
-});
-
 //only do this if we're on the home page
-
 $(document).ready(function(){
 var docName = returnDocument();
 if (docName=="index.htm") {
@@ -133,20 +93,11 @@ if (docName=="index.htm") {
 }
 });
 
-
 function returnDocument() {
-        var file_name = document.location.href;
-        var end = (file_name.indexOf("?") == -1) ? file_name.length : file_name.indexOf("?");
-        return file_name.substring(file_name.lastIndexOf("/")+1, end);
- }
-
-$(".img-swap").hover(function () {
-      this.src = this.src.replace("-off","-on");
-  }, function () {
-     if(!$(this).hasClass("clicked"))	 
-       this.src = this.src.replace("-on","-off");
- });
- 
+    var file_name = document.location.href;
+    var end = (file_name.indexOf("?") == -1) ? file_name.length : file_name.indexOf("?");
+    return file_name.substring(file_name.lastIndexOf("/")+1, end);
+}
 
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){

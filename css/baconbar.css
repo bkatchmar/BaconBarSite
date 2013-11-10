@@ -1,10 +1,10 @@
 ﻿/* Highest Level Elements */
-html {overflow-y: scroll; }
+html { overflow-y: scroll; }
 body { background: #401502 url(../img/core/bg_3.jpg) repeat 0px 0px; color: #F7A08F; font-family: Arial; margin: auto; }
 header, main, footer { display: block; margin: 0px auto; position: relative; width: 980px; z-index: 1; }
 a:link { color: #F7A08F; text-decoration: none; border:none; }
 a:visited { color: #F7A08F; text-decoration: none; }
-img {text-decoration: none; border: 0px}
+img { text-decoration: none; border: 0px}
 
 /* Header Specifics */
 header#primary { font-family: "Frutiger LT W01 65 Bold"; height: 120px; padding: 15px 0px 0px 0px; z-index: 10; }
@@ -24,7 +24,7 @@ header#primary nav div a.selected { color: #FFF; }
 header#primary nav div#about_dropdown div#about_dropdown_section a { padding: 0px; }
 
 /* Main Specifics */
-main#page_content div.hero { padding: 15px 0px 10px; position: relative; }
+main#page_content div.hero { padding: 15px 0px 10px; position: relative; width: 960px; }
 main#page_content div.hero #googlemap.gmap3{ margin: 0px auto; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 980px; height: 373px; }
 main#page_content div.hero img.main { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; position: relative; width: 100%; z-index: 5; }
 main#page_content div.hero img.tag { left: 10px; position: absolute; top: 0px; z-index: 10; }
@@ -34,6 +34,7 @@ main#page_content article { position: relative; padding: 0px 0px 20px 35px; }
 main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 main#page_content article p { color: #FFF; font-size: 11pt; line-height:1.2; margin: 5px 0px 20px; width: 60%; }
 main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
+main#page_content div.pignav { cursor: pointer; }
 main#page_content div.pignav-centered { text-align: center; }
 main#page_content div.pignav-right { text-align: right; }
 
