@@ -25,7 +25,7 @@ header#primary nav div#about_dropdown div#about_dropdown_section a { padding: 0p
 
 /* Main Specifics */
 main#page_content div.hero { padding: 15px 0px 10px; position: relative; width: 960px; }
-main#page_content div.hero #googlemap.gmap3{ margin: 0px auto; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 980px; height: 373px; }
+main#page_content div.hero #googlemap.gmap3 { margin: 0px auto; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; width: 100%; height: 373px; }
 main#page_content div.hero img.main { border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; position: relative; width: 100%; z-index: 5; }
 main#page_content div.hero img.tag { left: 10px; position: absolute; top: 0px; z-index: 10; }
 main#page_content div.hero img.tag2 { left: 0px; position: absolute; top: 0px; z-index: 10; }
