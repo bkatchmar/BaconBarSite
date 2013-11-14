@@ -20,7 +20,7 @@
     <header id="primary">
         <div class="information">
             <img class="logo" src="img/core/BBB-logo.png" alt="img/core/BBB-logo.png" />
-            <span class="address">610 North Rush St &#183; Chicago, IL 60611 &#183; 312.660.6000</span>
+            <span class="address">610 North Rush St &#183; Chicago, IL 60611 &#183; 312-660-7200</span>
             <span class="social">Follow Us For Specials:</span>
             <span>
                 <a href="https://www.facebook.com/BurkesBaconBar" target="_blank"><img src="img/core/social/facebook.png" alt="Facebook" /></a>
@@ -73,10 +73,10 @@
                 <span class="panel">
                     <h1>Sign-Up</h1>
                     <p>Praesent at metus et ipsum suscipit pulvinar. Vivamus sed psuere enim.</p>
-                    <table>
+                    <table class="enter-email-form">
                         <tr>
                             <td valign="top"><input type="text" placeholder="EMAIL ADDRESS" /></td>
-                            <td valign="top"><img src="img/core/signup-submit-bttn.gif" alt="Submit Email" /></td>
+                            <td valign="top"><img src="img/core/signup-submit-bttn.gif" alt="Submit Email" class="enter-email" /></td>
                         </tr>
                     </table>
                 </span>
@@ -135,13 +135,27 @@
         <div>&copy;&nbsp;<span class="current_year"></span>&nbsp;Burke&rsquo;s Bacon Bar</div>
     </footer>
     
+    <div class="form-lightbox"></div>
+    <div class="contact-form lightbox">
+        <div class="close-btn">X</div>
+        <div class="first-name-validation">First Name Required</div>
+        <div><input type="text" placeholder="FIRST NAME" id="fname" /></div>
+        <div class="last-name-validation">Last Name Required</div>
+        <div><input type="text" placeholder="LAST NAME" id="lname" /></div>
+        <div class="email-validation">Email Required</div>
+        <div><input type="text" placeholder="EMAIL" id="email" /></div>
+        <div><a href="JavaScript:void(0);">Subscribe</a></div>
+    </div>
+
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="js/denihan.baconbar.utils.js"></script>
     <script src="js/denihan.baconbar.year.js"></script>
     <script src="js/denihan.baconbar.toggler.js"></script>
     <script src="js/denihan.gallery.tiled.js"></script>
     <script src="js/denihan.baconbar.hero.pig.gallery.js"></script>
+    <script src="js/denihan.baconbar.lightbox.js"></script>
     <script src="js/denihan.baconbar.page.load.js"></script>     
 </body>
 </html>
