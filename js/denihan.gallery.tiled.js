@@ -15,8 +15,8 @@
             }
 
             jQuery("span#slider-wrapper").find(".oldActive").removeClass("oldActive");
-            jQuery("span#slider-wrapper").find("span.sp").css("display", "none").fadeOut();
-            jQuery("span#slider-wrapper").find("span.sp.active").css("display", "inline").fadeIn();
+            jQuery("span#slider-wrapper").find("span.sp").css("display", "none");
+            jQuery("span#slider-wrapper").find("span.sp.active").css("display", "inline");
         });
 
         jQuery("img.button-previous").click(function () {
@@ -30,8 +30,8 @@
             }
 
             jQuery("span#slider-wrapper").find(".oldActive").removeClass("oldActive");
-            jQuery("span#slider-wrapper").find("span.sp").css("display", "none").fadeOut();
-            jQuery("span#slider-wrapper").find("span.sp.active").css("display", "inline").fadeIn();
+            jQuery("span#slider-wrapper").find("span.sp").css("display", "none");
+            jQuery("span#slider-wrapper").find("span.sp.active").css("display", "inline");
         });
     });
 });

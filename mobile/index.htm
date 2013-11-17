@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bacon Bar Mobile Page</title>
+    <link rel="Stylesheet" href="../css/mobile/baconbar-mobile.css" />
+    <link rel="Stylesheet" href="../css/fonts.css" />
+</head>
+<body>
+    <header id="primary">
+        <img class="logo" src="../img/core/BBB-logo.png" alt="Burkes Bacon Bar Logo" />
+        <div class="address-info">
+            <span>610 North Rush ST</span>
+            <span class="divider">|</span>
+            <span>Chicago, IL 60611</span>
+            <span class="divider">|</span>
+            <span>312-660-7200</span>
+        </div>
+        <div class="hero">
+            <div class="gallery">
+                <img src="../img/gallery/mobile/jchi-burkes-bacon-bar-pic.jpg" alt="Gallery Image 1" />
+            </div>
+        </div>
+        <div class="specials-container">
+            <div class="specials">
+                <span class="follow">Follow Us For Specials:</span>
+                <span>
+                    <a href="https://www.facebook.com/BurkesBaconBar" target="_blank"><img src="../img/core/social/facebook.png" alt="Facebook" /></a>
+                    <a href="https://twitter.com/BurkesBaconBar" target="_blank"><img src="../img/core/social/twitter.png" alt="Twitter" /></a>
+                    <a href="https://foursquare.com/v/burkes-bacon-bar/51a51cd12fc6471839c2d57a" target="_blank"><img src="../img/core/social/foursquare.png" alt="Four Square" /></a>
+                    <img src="../img/core/social/instagram.png" alt="Instagram" />
+                </span>
+            </div>
+        </div>
+        <div class="place-order">
+            <a href="#">Place An Order</a>
+        </div>
+    </header>
+
+    <div id="main">
+        <nav>
+            <div>
+                <div class="header">View Menu</div>
+                <div class="content">
+                    <p>For delivery and catering, please call 312.660.7200 or email orders@burkesbaconbar.com.</p>
+                    <p>For giftcards, please call 312.660.6000</p>
+                    <p><img src="../img/menu-thumb.png" alt="Bacon Bar Menu Image" /></p>
+                </div>
+            </div>
+            <div>
+                <div class="header">Location</div>
+                <div class="content">
+                    <div class="gmap" id="googlemap"></div>
+                    <p>610 NORTH RUSH ST&nbsp;&nbsp;Chicago, IL 60611</p>
+                    <p>312.660.7200</p>
+                </div>
+            </div>
+            <div>
+                <div class="header">About</div>
+                <div class="content">
+                    <span class="about">Prawsent at metus et ipsum suscipit pulvinar. Vivamus sed posuere enim. Nam ut mauris ut uma pharetra pretium eget quis libero. Integer tempor, augue a vehicula tincidunt, dui nisi bibendum tortor, eget omare erat magna eu massa.</span>
+                    <span class="portrait"><img src="../img/core/burke-photo.jpg" alt="David Burke Photo" /></span>
+                </div>
+            </div>
+            <div>
+                <div class="header">Sign Up</div>
+                <div class="content">
+                    <div class="contact-form">
+                        <div class="first-name-validation">First Name Required</div>
+                        <div><input type="text" placeholder="FIRST NAME" id="fname" /></div>
+                        <div class="last-name-validation">Last Name Required</div>
+                        <div><input type="text" placeholder="LAST NAME" id="lname" /></div>
+                        <div class="email-validation">Email Required</div>
+                        <div><input type="text" placeholder="EMAIL" id="email" /></div>
+                        <div><a href="JavaScript:void(0);">SIGN-UP</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="feed">
+            <div>
+                <h2>Feed</h2>
+                <img src="../img/gallery/controls/feed-right-arrow.gif" alt="right arrow" class="button-next" />
+                <img src="../img/gallery/controls/feed-left-arrow.gif" alt="left arrow" class="button-previous" />
+            </div>
+            <span id="slider-wrapper">
+                <span id="slider">
+                    <span class="sp">
+                        <img src="../img/gallery/feed1.jpg" alt="Food" class="gallery_image" />
+                    </span>
+                    <span class="sp">
+                        <img src="../img/gallery/feed2.jpg" alt="Food" class="gallery_image" />
+                    </span>
+                    <span class="sp">
+                        <img src="../img/gallery/feed3.jpg" alt="Food" class="gallery_image" />
+                    </span>
+                    <span class="sp">
+                        <img src="../img/gallery/feed4.jpg" alt="Food" class="gallery_image" />
+                    </span>
+                    <span class="sp">
+                        <img src="../img/gallery/feed5.jpg" alt="Food" class="gallery_image" />
+                    </span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <footer>
+        <div class="logos">
+            <span><a href="http://www.davidburkesprimehouse.com/" target="_blank"><img src="../img/core/primehouse-logo.png" alt="David Burke Primehouse Logo" /></a></span>
+            <span><a href="http://www.davidburke.com/" target="_blank"><img src="../img/core/david-burke-logo.png" alt="David Burke Logo" /></a></span>
+            <span><a href="http://www.jameshotels.com" target="_blank"><img src="../img/core/james-logo.png" alt="The James Logo" /></a></span>
+        </div>
+    </footer>
+
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/denihan.gallery.tiled.js"></script>
+    <script src="../js/mobile/denihan.baconbar.page.load.mobile.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> 
+    <script src="../js/gmap3.js"></script>
+    <script src="../js/mobile/callgmap.js"></script>
+</body>
+</html>
