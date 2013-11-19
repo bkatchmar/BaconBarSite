@@ -13,16 +13,16 @@ header#primary div.hero div.gallery img { height: 100%; width: 100%; }
 header#primary div.specials-container { height: 50px; }
 header#primary div.specials { color: #FFF; float: right; font-family: "TradeGothicW01-BoldExte"; padding: 5px 10px; }
 header#primary div.specials span.follow { vertical-align: super; }
-header#primary div.place-order a:link { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 22px; font-weight: bold; margin: 0px auto; padding: 10px 0px; text-decoration: none; text-transform: uppercase; width: 30%; }
+header#primary div.place-order a:link { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 30px; font-weight: bold; margin: 0px auto; padding: 15px 0px; text-decoration: none; text-transform: uppercase; width: 70%; }
 
 /* Main */
 div#main { font-family: "TradeGothicW01-BoldExte"; }
 div#main nav>div { color: #F7A08F; margin: 15px 0px; padding: 10px 0px; }
-div#main div.header { background-color: #401502; cursor: pointer; font-size: 20px; padding: 10px 0px; text-align: center; text-transform: uppercase; }
-div#main div.content { color: #FFF; display: block; margin: 0px auto; width: 60%; }
+div#main div.header { background-color: #401502; cursor: pointer; font-size: 34px; padding: 20px 0px; text-align: center; text-transform: uppercase; }
+div#main div.content { color: #FFF; display: none; margin: 10px auto; width: 90%; }
 div#main div.content div.gmap { height: 400px; margin: 10px 0px; width: 100%; }
-div#main div.content span.about { display: inline-block; width: 60%; }
-div#main div.content span.portrait { display: inline-block; padding: 5px 0px; width: 148px; }
+div#main div.content span.about { display: inline-block; width: 70%; }
+div#main div.content span.portrait { display: inline-block; padding: 5px 0px; vertical-align: top; width: 148px; }
 div#main div.content div.contact-form>div { margin: 5px 0px; }
 div#main div.content div.contact-form>div a:link { background: #F7A08F url('../../img/core/signup-submit-bttn.gif') no-repeat 0px 0px; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 22px; font-weight: bold; margin: 10px 0px; padding: 0px 0px 0px 60px; text-decoration: none; width: 50%; }
 
@@ -46,3 +46,10 @@ footer div.logos span { padding: 0px 20px; }
 :-ms-input-placeholder { color: #481301; } /* IE */
 input:-moz-placeholder { color: #481301; }
 .placeholder { color: #481301; }
+
+/* Form Text */
+div.contact-form div.first-name-validation, 
+div.contact-form div.last-name-validation, 
+div.contact-form div.email-validation,
+div.contact-form div.name-validation,
+div.contact-form div.phone-validation { color: #FFF; display: none; padding: 0px; }

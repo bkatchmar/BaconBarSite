@@ -5,11 +5,10 @@
 ; (function ($) {
     $.fn.denihanToggleMobile = function () {
         function initialize($el) {
-            $("div.content").slideUp(200);
-
             $el.find("div.header").click(function() {
                 $("div.content").slideUp(200);
                 $el.find("div.content").slideDown(400);
+                fillInMap();
             });
         }
 

@@ -1,4 +1,4 @@
-﻿jQuery(document).ready(function () {
+﻿function fillInMap() {
     jQuery('#googlemap').gmap3({
         map: {
             options: {
@@ -17,4 +17,4 @@
             }
         }
     });
-});
+}
