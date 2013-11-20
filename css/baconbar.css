@@ -34,6 +34,7 @@ main#page_content article { position: relative; padding: 0px 0px 20px 35px; }
 main#page_content article header h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; }
 main#page_content article p { color: #FFF; font-size: 11pt; line-height:1.2; margin: 5px 0px 20px; width: 60%; }
 main#page_content article a:link { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
+main#page_content article a:visited { background-color: #F7A08F; color: #401502; font-family: "TradeGothicW01-BoldExte"; font-size: 12px; font-weight: bold; padding: 8px; text-transform: uppercase; }
 main#page_content div.pignav { cursor: pointer; }
 main#page_content div.pignav-centered { text-align: center; }
 main#page_content div.pignav-right { text-align: right; }
