@@ -46,7 +46,7 @@ main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
 main#page_content article section img { margin: 0px 0px 10px; }
 main#page_content article section img.menu_thumb { padding: 20px 0px 0px 80px; }
 main#page_content article section div.address { font-family: "Frutiger LT W01 65 Bold"; padding: 0px 0px 10px; }
-main#page_content article section a:link {background-color: transparent; }
+main#page_content article section a:link { background-color: transparent; color: #F7A08F; }
 
 main#page_content article section span.panel_column span.panel #slider { padding: 0px 0px 0px 20px; }
 main#page_content article section span.panel_column span.panel #slider-location { padding: 0px 0px 0px 0px; position:relative; left: 20px; top: 10px;  }

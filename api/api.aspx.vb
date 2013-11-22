@@ -38,7 +38,7 @@ Partial Public Class api_api
         Dim objEmail As New MailMessage()
         Dim objSMTP As New SmtpClient()
 
-        objEmail.[To].Add("brian.katchmar@denihan.com")
+        objEmail.[To].Add("orders@burkesbaconbar.com")
         objEmail.From = New MailAddress("primehouse@jameshotels.com")
         objEmail.Subject = "Bacon Bar Catering Form Submission"
         objEmail.Body = "<div>Name: " & extractedFromObject.name & "</div><div>Phone: " & extractedFromObject.phone & "</div><div>Email: " & extractedFromObject.email & "</div>"
