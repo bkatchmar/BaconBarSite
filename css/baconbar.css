@@ -72,6 +72,8 @@ main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; 
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
 main#page_content div.panels span.panel_column span.panel.nowood { background: none; margin-top: 0px; padding-top: 0px; position: relative; top: -4px; }
 main#page_content div.panels span.panel_column span.panel.nowood h1 { background-color: #401502; opacity: 0.9; padding-top: 0px; }
+main#page_content div.panels span.panel_column span.panel.larger { min-height: 330px; }
+main#page_content div.panels span.panel_column span.panel.smaller { min-height: 186px; }
 
 /* Footer Specifics */
 footer { font-size: 10pt; }
