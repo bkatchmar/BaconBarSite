@@ -53,7 +53,12 @@ main#page_content article section span.panel_column span.panel #slider-location 
 main#page_content article section span.panel_column span.panel img.button-previous, main#page_content article section span.panel_column span.panel img.button-next { cursor: pointer; display: inline; float: right; position: relative; z-index: 2; top: -35px; }
 main#page_content article section span.panel_column span.panel img.button-next { padding: 0px 150px 0px 5px; }
 
-main#page_content article section div.contact-form a:link { background-color: #F7A08F; }
+main#page_content article section div.contact-form a:link { background-color: #F7A08F; color: #401502; }
+
+main#page_content article p.normal-link a, main#page_content article div.normal-link a { background: none; color: #F7A08F; font-family: Arial; font-size: 12pt; font-weight: normal; padding: 0px; text-decoration: none; text-transform: none; }
+main#page_content article div.normal-link { padding: 10px 0px; }
+main#page_content article div.normal-link>div { padding: 5px 10px; }
+main#page_content article div.normal-link>div a { color: #FFF; }
 
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; padding: 0px 0px 0px 5px; }
