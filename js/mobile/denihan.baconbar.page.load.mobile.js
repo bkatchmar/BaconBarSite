@@ -4,6 +4,7 @@
         firstName: "div.contact-form input#fname",
         lastName: "div.contact-form input#lname",
         email: "div.contact-form input#email",
+        zip: "div.contact-form input#zip",
         apiCall: "../api/api.aspx"
     });
 });

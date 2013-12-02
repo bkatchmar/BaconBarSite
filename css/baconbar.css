@@ -9,7 +9,7 @@ img { text-decoration: none; border: 0px}
 /* Header Specifics */
 header#primary { font-family: "Frutiger LT W01 65 Bold"; height: 120px; padding: 15px 0px 0px 0px; z-index: 10; }
 header#primary div.information { height: 85px; text-align: right; text-transform: uppercase; }
-header#primary div.information span { display: inline-block; font-size: 14px; vertical-align: top; }
+header#primary div.information span { display: inline-block; font-size: 13px; vertical-align: top; }
 header#primary div.information span.address { padding: 5px 25px 0px 0px; }
 header#primary div.information span.social { padding: 5px 0px 0px 0px; }
 header#primary div.information img.logo { float: left; }
@@ -46,7 +46,6 @@ main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
 main#page_content article section img { margin: 0px 0px 10px; }
 main#page_content article section img.menu_thumb { padding: 20px 0px 0px 80px; }
 main#page_content article section div.address { font-family: "Frutiger LT W01 65 Bold"; padding: 0px 0px 10px; }
-main#page_content article section a:link { background-color: transparent; color: #F7A08F; }
 
 main#page_content article section span.panel_column span.panel #slider { padding: 0px 0px 0px 20px; }
 main#page_content article section span.panel_column span.panel #slider-location { padding: 0px 0px 0px 0px; position:relative; left: 20px; top: 10px;  }
@@ -77,11 +76,11 @@ main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; 
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
 main#page_content div.panels span.panel_column span.panel.nowood { background: none; margin-top: 0px; padding-top: 0px; position: relative; top: -4px; }
 main#page_content div.panels span.panel_column span.panel.nowood h1 { background-color: #401502; opacity: 0.9; padding-top: 0px; }
-main#page_content div.panels span.panel_column span.panel.larger { min-height: 330px; }
-main#page_content div.panels span.panel_column span.panel.smaller { min-height: 186px; }
+main#page_content div.panels span.panel_column span.panel.larger { min-height: 335px; }
+main#page_content div.panels span.panel_column span.panel.smaller { min-height: 190px; }
 
 /* Footer Specifics */
-footer { font-size: 10pt; }
+footer { font-size: 9pt; }
 footer div { text-align: center; text-transform: uppercase; }
 footer div.logos { padding: 20px 0px; }
 footer div.logos span { padding: 0px 20px; }
@@ -100,7 +99,8 @@ div.contact-form.lightbox div.first-name-validation,
 div.contact-form.lightbox div.last-name-validation, 
 div.contact-form div.email-validation,
 div.contact-form div.name-validation,
-div.contact-form div.phone-validation { color: #FFF; display: none; padding: 0px; }
+div.contact-form div.phone-validation, 
+div.contact-form div.zip-validation { color: #FFF; display: none; padding: 0px; }
 
 /* Placeholder Text */
 ::-webkit-input-placeholder { color: #481301; }

@@ -5,6 +5,7 @@
             firstName: "div.contact-form.lightbox input#fname",
             lastName: "div.contact-form.lightbox input#lname",
             email: "div.contact-form.lightbox input#email",
+            zip: "div.contact-form.lightbox input#zip",
             apiCall: "api/api.aspx"
         }, options);
 
@@ -18,19 +19,22 @@
             var firstName = jQuery(settings.firstName).val();
             var lastName = jQuery(settings.lastName).val();
             var email = jQuery(settings.email).val();
+            var zip = jQuery(settings.zip).val();
 
             firstName = firstName.replace(new RegExp("'", "g"), "\\'");
             lastName = lastName.replace(new RegExp("'", "g"), "\\'");
             email = email.replace(new RegExp("'", "g"), "\\'");
+            zip = zip.replace(new RegExp("'", "g"), "\\'");
 
-            if (Contact.FormValidateAndSubmit(firstName, lastName, email)) {
+            if (Contact.FormValidateAndSubmit(firstName, lastName, email, zip)) {
                 Denihan.Utils.updateStatusMessage("div.first-name-validation", "One Moment...");
 
                 var submitData = {
                     requestName: "SubmitFrontPageForm",
                     requestFirstName: firstName,
                     requestLastName: lastName,
-                    requestEmail: email
+                    requestEmail: email,
+                    requestZip: zip
                 }
 
                 jQuery.post(settings.apiCall, submitData).done(function (data) {
@@ -55,7 +59,7 @@
 })(jQuery);
 
 var Contact = {
-    FormValidateAndSubmit: function (fName, lName, email) {
+    FormValidateAndSubmit: function (fName, lName, email, zip) {
         var status = true;
 
         if (Denihan.Utils.stringIsEmpty(fName) || Denihan.Utils.stringIsBlank(fName)) {
@@ -80,6 +84,14 @@ var Contact = {
         }
         else {
             jQuery("div.email-validation").css("display", "none");
+        }
+
+        if (Denihan.Utils.stringIsEmpty(zip) || Denihan.Utils.stringIsBlank(zip)) {
+            status = false;
+            Denihan.Utils.updateStatusMessage("div.contact-form div.zip-validation", "Zip/Postal Code Required");
+        }
+        else {
+            jQuery("div.contact-form div.zip-validation").css("display", "none");
         }
 
         return status;

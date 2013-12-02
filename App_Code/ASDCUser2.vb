@@ -30,12 +30,13 @@ Public Class ASDCUser2
         passed.Add("@EMAIL", emailAddress.ToLower())
         Return DataAccessFromSQL2(Of ASDCUser2).ExecuteCommandAndFillInList("spGetUserByEmail", passed)
     End Function
-    Public Shared Sub EnterNewEmail(Optional firstName As String = "", Optional lastName As String = "", Optional email As String = "")
+    Public Shared Sub EnterNewEmail(Optional firstName As String = "", Optional lastName As String = "", Optional email As String = "", Optional zip As String = "")
         Dim passed As New Dictionary(Of String, Object)()
         passed.Add("@fn", firstName)
         passed.Add("@ln", lastName)
         passed.Add("@email", email)
         passed.Add("@source", "baconbar.com")
+        passed.Add("@zip", zip)
 
         DataAccessFromSQL2(Of ASDCUser2).ExecuteNonSelectCommand("spUserAddShort", passed)
     End Sub
