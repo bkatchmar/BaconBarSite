@@ -43,7 +43,7 @@
        jQuery("div.image_carousel div#foo2 img").changeHero();
     }
 
-    //Hero Pig Plugin
+    // Hero Pig Plugin
     jQuery("main#page_content div.pignav").denihanPigGallery();
 
     modernizr();

@@ -19,6 +19,30 @@
         updateStatusMessage: function (target, message) {
             jQuery(target).text(message);
             jQuery(target).css("display", "block");
+        },
+        getPageNameForOmniture: function () {
+            var pages = {
+                "index": { "omnName": "Home" },
+                "about": { "omnName": "About" },
+                "catering": { "omnName": "Catering" },
+                "contact": { "omnName": "Contact" },
+                "delivery": { "omnName": "We Deliver" },
+                "gallery": { "omnName": "Gallery" },
+                "gift-cards": { "omnName": "Gift Cards" },
+                "legal": { "omnName": "Privacy Policy" },
+                "location": { "omnName": "Location" },
+                "menus": { "omnName": "Menus" },
+                "press": { "omnName": "Press" },
+                "sitemap": { "omnName": "Site Map" }
+            };
+
+            var currentPageUrl = window.location.toString().toLowerCase();
+            currentPageUrl = currentPageUrl.replace(new RegExp(".htm", "g"), "");
+            currentPageUrl = currentPageUrl.replace(new RegExp(".html", "g"), "");
+
+            var sectionsInUrl = currentPageUrl.split("/");
+            var pageName = sectionsInUrl[sectionsInUrl.length - 1];
+            return (pages[pageName] ? pages[pageName].omnName : "Home");
         }
     }
 };
