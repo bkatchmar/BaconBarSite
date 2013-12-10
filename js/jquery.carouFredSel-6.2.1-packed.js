@@ -23,8 +23,14 @@
         function initialize($el) {
             $el.click(function() {
                 var src = $el.attr("src");
+                var header = $el.attr("data-denihan-caption-header");
+                var subHeader = $el.attr("data-denihan-caption-sub-header");
+                
                 src = src.replace( "/small/", "/large/");
+                
                 $("main#page_content.imageGallery div.image img").attr("src", src);
+                $("main#page_content.imageGallery div.image div.caption h1").text(header);
+                $("main#page_content.imageGallery div.image div.caption p").text(subHeader);
             });
         }
 
