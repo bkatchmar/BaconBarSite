@@ -1,5 +1,5 @@
 ﻿main#page_content.imageGallery div.image img { height: 350px; border: 10px solid #401502; border-bottom-color: #000; border-right-color: #000; }
-.image_carousel { background-color: #000; position: relative; width: 97%; margin: 0px 0px 0px;  padding: 10px 10px 10px 40px; top: 10px;}
+.image_carousel { background-color: #000; position: relative; width: 97%; margin: 0px 0px 0px;  padding: 10px 10px 10px 40px; top: -60px;}
 .image_carousel img { border: none; background-color: #000; padding: 0px; margin: 6px 6px 6px 6px; display: block; float: left; position: relative; left: 5px; }
 a.prev { background: url(../img/gallery/controls/arrow-prev.jpg) no-repeat transparent; width: 45px; height: 90px; display: block; position: absolute; top: 50px; }
 a.next { background: url(../img/gallery/controls/arrow-next.jpg) no-repeat transparent; width: 45px; height: 90px; display: block; position: absolute; top: 50px; }
@@ -12,3 +12,6 @@ a.prev span, a.next span { display: none; }
 .pagination a span { display: none; }
 .clearfix { float: none; clear: both; }
 div.image_carousel div#foo2 img { cursor: pointer; text-align: center; }
+.caption { width: 985px; height: 60px; background-color: #401502; opacity: 0.8; padding-top: 20px; position: relative; top: -93px; left: 10px; }
+.caption h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 18px; font-weight: normal; text-transform: uppercase; color: #eb998a; margin: 0px; padding: 0px 15px 10px 15px; }
+.caption p { font-family: "Frutiger LT W01 65 Bold"; color: #ffd6cc; font-size: 11pt; margin: 0px; padding-top: 0px; padding-left: 15px; }
