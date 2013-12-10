@@ -4,6 +4,8 @@
         jQuery("div.form-lightbox").animate({ opacity: "0.8" }, 700);
         jQuery("div.contact-form.lightbox").animate({ opacity: "1" }, 700);
 
+        s.events = "event28";
+
         // Pre Fill In Email Field
         var inputtedEmail = jQuery("table.enter-email-form input").val();
         jQuery("div.contact-form.lightbox input#email").val(inputtedEmail);

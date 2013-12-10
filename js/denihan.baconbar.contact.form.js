@@ -46,6 +46,7 @@
                     }
                     else {
                         Denihan.Utils.updateStatusMessage("div.first-name-validation", "You Have Been Signed Up");
+                        s.events = "event28,event29,event61";
                     }
                 });
             }

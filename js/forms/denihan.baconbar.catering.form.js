@@ -1,5 +1,6 @@
 ﻿jQuery(document).ready(function () {
     jQuery("main#page_content article section div.contact-form").denihanCateringForm();
+    s.events = "event28";
 });
 
 ; (function ($) {
@@ -30,6 +31,7 @@
                 // Submit AJAX Request
                 jQuery.post("api/api.aspx", submitData).done(function (data) {
                     Denihan.Utils.updateStatusMessage("div.contact-form div.name-validation", "Request Sent");
+                    s.events = "event28,event29";
                 });
             }
         }

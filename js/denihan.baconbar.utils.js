@@ -22,9 +22,9 @@
         },
         getPageNameForOmniture: function () {
             var pages = {
-                "index": { "omnName": "Home" },
+                "index": { "omnName": "Home", "formName": "Bacon Bar Newsletter Sign Up Form" },
                 "about": { "omnName": "About" },
-                "catering": { "omnName": "Catering" },
+                "catering": { "omnName": "Catering", "formName": "Bacon Bar Catering Form" },
                 "contact": { "omnName": "Contact" },
                 "delivery": { "omnName": "We Deliver" },
                 "gallery": { "omnName": "Gallery" },
@@ -42,7 +42,7 @@
 
             var sectionsInUrl = currentPageUrl.split("/");
             var pageName = sectionsInUrl[sectionsInUrl.length - 1];
-            return (pages[pageName] ? pages[pageName].omnName : "Home");
+            return (pages[pageName] ? pages[pageName] : pages["index"]);
         }
     }
 };
