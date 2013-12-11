@@ -59,6 +59,8 @@ main#page_content article div.normal-link { padding: 10px 0px; }
 main#page_content article div.normal-link>div { padding: 5px 10px; }
 main#page_content article div.normal-link>div a { color: #FFF; }
 
+main#page_content article section a.menu-pdf-link { background-color: transparent; }
+
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; padding: 0px 0px 0px 5px; }
 main#page_content div.panels span.panel_column { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 33%; }

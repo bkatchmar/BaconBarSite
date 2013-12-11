@@ -22,7 +22,7 @@
         },
         getPageNameForOmniture: function () {
             var pages = {
-                "index": { "omnName": "Home", "formName": "Bacon Bar Newsletter Sign Up Form" },
+                "index": { "omnName": "Home" },
                 "about": { "omnName": "About" },
                 "catering": { "omnName": "Catering", "formName": "Bacon Bar Catering Form" },
                 "contact": { "omnName": "Contact" },

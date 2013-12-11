@@ -17,7 +17,7 @@ header#primary div.specials-container { height: 50px; }
 header#primary div.specials { color: #FFF; float: right; font-family: "TradeGothicW01-BoldExte"; padding: 5px 10px; }
 header#primary div.specials img { height: 35px; width: 35px; }
 header#primary div.specials span.follow { vertical-align: super; }
-header#primary div.place-order a:link { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 30px; font-weight: bold; margin: 0px auto; padding: 15px 0px; text-decoration: none; text-transform: uppercase; width: 70%; }
+header#primary div.place-order a:link, header#primary div.place-order a:visited { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 30px; font-weight: bold; margin: 0px auto; padding: 15px 0px; text-decoration: none; text-transform: uppercase; width: 70%; }
 
 /* Main */
 div#main { font-family: "TradeGothicW01-BoldExte"; }

@@ -12,7 +12,7 @@ var denOmn = {
 	// JS Requirements:
 	'globalUrl':				'http://www.denihan.com/omn/glo_s_code.js',
 	'globalSecureUrl':			'https://www.denihan.com/omn/glo_s_code.js',
-	'siteCode':					'den',
+	'siteCode':					'bbb',
 	'lastLocalUpate':			'12.10.2013',
 	'server':                   'www.burkesbaconbar.com',
 	// Last edit: ROIL|PCL

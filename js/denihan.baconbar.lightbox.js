@@ -3,8 +3,10 @@
         jQuery("div.form-lightbox, div.contact-form.lightbox").css("display", "block");
         jQuery("div.form-lightbox").animate({ opacity: "0.8" }, 700);
         jQuery("div.contact-form.lightbox").animate({ opacity: "1" }, 700);
-
+        
         s.events = "event28";
+        s.eVar29 = "Bacon Bar Newsletter Sign Up Form";
+        s.track();
 
         // Pre Fill In Email Field
         var inputtedEmail = jQuery("table.enter-email-form input").val();
