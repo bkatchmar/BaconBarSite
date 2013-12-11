@@ -4,8 +4,7 @@
  * Denihan Hospitality Group main site
 */
 
-var s_account = (typeof s_account != 'undefined') ? s_account : 'dhgdenihan';
-
+var s_account = (typeof s_account != 'undefined') ? s_account : 'dhgbaconbar';
 
 // Config:
 var denOmn = {
