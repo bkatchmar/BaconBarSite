@@ -134,9 +134,4 @@ background: -ms-linear-gradient(top, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 10
 background: linear-gradient(to bottom, rgba(147,65,50,1) 0%,rgba(197,115,100,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#934132', endColorstr='#c57364',GradientType=0 ); /* IE6-9 */
 }
-main#page_content div.hero div.giftcard img { padding: 30px 0px 35px 0px;  } 
-
-
-
-
-
+main#page_content div.hero div.giftcard img { padding: 78px 0px 0px 0px;  } 
