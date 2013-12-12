@@ -1,5 +1,6 @@
 ﻿jQuery(document).ready(function () {
     jQuery("span.current_year").denihanGetYear();
+    jQuery("span.current_year").denihanMobileDetect();
 
     jQuery("header#primary nav div#about_dropdown a").denihanToggle({
         target: "header#primary nav div#about_dropdown_section",
@@ -37,7 +38,7 @@
                 key: "right"
             },
             pagination: {
-				container: "#foo2_pag",	
+				container: "#foo2_pag"
 			}
         });
        jQuery("div.image_carousel div#foo2 img").changeHero();
@@ -104,3 +105,29 @@ function preload(arrayOfImages) {
         new Image().src = this;
     });
 }
+
+; (function ($) {
+    $.fn.denihanMobileDetect = function (options) {
+
+        // Create some defaults, extending them with any options that were provided
+        var settings = $.extend({ 
+            "overrideIsMobile": false
+        }, options);
+
+        function initialize($el) {
+            // Run this in the event we detect a mobile browser
+            if(amUsingMobileBrowser() || settings.overrideIsMobile) {
+                window.location="/mobile/index.htm";
+            }
+        }
+
+        function amUsingMobileBrowser() {
+            return (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent));
+        }
+
+        return this.each(function () {
+            var $this = $(this);
+            initialize($this);
+        });
+    };
+})(jQuery);
