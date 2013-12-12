@@ -88,6 +88,7 @@ footer div.logos { padding: 20px 0px; }
 footer div.logos span { padding: 0px 20px; }
 footer nav { padding: 10px 0px; text-align: center; }
 footer nav span { padding: 0px 10px; text-transform: uppercase; }
+footer div.copyright { padding: 0px 0px 15px; }
 
 /* Form Styling */
 div.form-lightbox { cursor: pointer; display: none; filter: alpha(opacity=0); opacity: 0; } /* Opacity */
