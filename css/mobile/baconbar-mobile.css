@@ -1,14 +1,16 @@
 ﻿/* Highest Level Elements */
-html, body { margin: 0px; padding: 0px; }
+html, body { font-size: 26px; margin: 0px; padding: 0px; }
 body { background: url(../../img/core/feed-burke-woodbg.png) repeat 0px 0px; color: #F7A08F; font-family: Arial; }
 a:link { color: #F7A08F; text-decoration: none; }
 a:visited { color: #F7A08F; text-decoration: none; }
 img { border: 0px; }
-input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; font-size: 34px; margin: 5px auto; padding: 25px 10px; width: 80%; }
+img.logo { padding: 30px 0px; width: 33%; }
+img.menu-img-pdf { width: 60%; }
+input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; font-size: 34px; margin: 10px auto; padding: 20px 40px; width: 65%; }
 
 /* Header */
 header#primary { font-family: "Frutiger LT W01 65 Bold"; margin: 0px auto; padding: 20px 0px 10px; text-align: center; width: 100%; }
-header#primary div.address-info { background-color: #401502; margin: 10px 0px 10px; font-size: 24px; padding: 10px 0px; text-transform: uppercase; }
+header#primary div.address-info { background-color: #401502; margin: 10px 0px 10px; font-size: 26px; padding: 20px 0px; text-transform: uppercase; max-height: 1000000px; }
 header#primary div.address-info span.divider { padding: 0px 5px; }
 header#primary div.hero { height: 334px; position: relative; }
 header#primary div.hero div.gallery { height: 100%; }
@@ -16,31 +18,31 @@ header#primary div.hero div.gallery img { height: 100%; width: 100%; }
 header#primary div.specials-container { height: 50px; }
 header#primary div.specials { color: #FFF; float: right; font-family: "TradeGothicW01-BoldExte"; padding: 5px 10px; }
 header#primary div.specials img { height: 50px; width: 50px; }
-header#primary div.specials span.follow { display: inline-block; height: 50px; vertical-align: top; }
-header#primary div.place-order a:link, header#primary div.place-order a:visited { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 30px; font-weight: bold; margin: 10px auto; padding: 15px 0px; text-decoration: none; text-transform: uppercase; width: 400px; }
+header#primary div.specials span.follow { display: inline-block; font-size: 30px; height: 50px; }
+header#primary div.place-order a:link, header#primary div.place-order a:visited { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 32px; font-weight: bold; margin: 60px auto 30px auto; padding: 35px 35px; text-decoration: none; text-transform: uppercase; width: 430px; }
 
 /* Main */
 div#main { font-family: "TradeGothicW01-BoldExte"; }
 div#main nav>div { color: #F7A08F; margin: 15px 0px; padding: 10px 0px; }
-div#main div.header { background-color: #401502; cursor: pointer; font-size: 34px; padding: 20px 0px; text-align: center; text-transform: uppercase; }
-div#main div.content { color: #FFF; display: none; font-size: 24px; margin: 10px auto; width: 90%; }
-div#main div.content p { font-size: 30px; }
-div#main div.content div.gmap { height: 400px; margin: 10px 0px; width: 100%; }
-div#main div.content span.about { display: block; font-size: 30px; width: 95%; }
+div#main div.header { background-color: #401502; cursor: pointer; font-size: 42px; padding: 30px 0px; text-align: center; text-transform: uppercase; }
+div#main div.content { color: #FFF; display: block; font-size: 24px; margin: 40px auto; width: 90%; max-height: 1000000px; }
+div#main div.content p { font-size: 34px; }
+div#main div.content div.gmap { height: 400px; margin: 0px auto; width: 75%; }
+div#main div.content span.about { display: block; font-size: 34px; width: 95%; }
 div#main div.content span.portrait { display: block; margin: 0px auto; padding: 5px 0px; vertical-align: top; width: 75%; }
 div#main div.content span.portrait img { width: 100%; }
-div#main div.content div.contact-form>div { margin: 5px 0px; text-align: center; }
-div#main div.content div.contact-form>div a:link { background: #F7A08F url('../../img/core/signup-submit-bttn.gif') no-repeat 0px center; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 28px; font-weight: bold; margin: 10px auto; padding: 20px 0px 20px 60px; text-align: left; text-decoration: none; width: 50%; }
+div#main div.content div.contact-form>div { margin: 15px 0px; text-align: center; }
+div#main div.content div.contact-form>div a:link { background: #F7A08F url('../../img/core/signup-submit-bttn.gif') no-repeat 0px center; background-size: 82px 72px; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 34px; font-weight: bold; margin: 20px auto; padding: 30px 0px; text-align: center; text-decoration: none; width: 40%; }
 div#main div.content p.centered { text-align: center; }
 
 /* Feed Gallery */
-div.feed { font-family: "TradeGothicW01-BoldExte"; margin: 0px auto; text-align: center; text-transform: uppercase; width: 300px; }
+div.feed { font-family: "TradeGothicW01-BoldExte"; margin: 50px auto; text-align: center; text-transform: uppercase; width: 640px; }
 div.feed #slider { padding: 0px; }
-div.feed #slider img.gallery_image { height: 300px; width: 300px; }
+div.feed #slider img.gallery_image { height: 640px; width: 640px; }
 div.feed #slider-location { padding: 0px 0px 0px 0px; position:relative; left: 20px; top: 10px; }
-div.feed h2 { font-size: 28px; margin: 0px; text-align: left; }
-div.feed img.button-previous, div.feed img.button-next { cursor: pointer; display: inline; float: right; height: 40px; position: relative; z-index: 2; top: -35px; width: 40px; }
-div.feed img.button-next { padding: 0px 0px 0px 5px; }
+div.feed h2 { font-size: 34px; margin: 0px; text-align: left; }
+div.feed img.button-previous, div.feed img.button-next { cursor: pointer; display: inline; float: right; height: 60px; position: relative; z-index: 2; top: -35px; width: 60px; }
+div.feed img.button-next { padding: 0px 0px 0px 40px; }
 
 /* Footer Specifics */
 footer { font-size: 10pt; }
