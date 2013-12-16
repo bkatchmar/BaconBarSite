@@ -1,4 +1,4 @@
-﻿jQuery(document).ready(function () {
+﻿function setUpImageGallery() {
     jQuery("span#slider-wrapper").each(function () {
         jQuery("span.sp").first().addClass("active");
         jQuery("span.sp").hide();
@@ -34,4 +34,4 @@
             jQuery("span#slider-wrapper").find("span.sp.active").css("display", "inline");
         });
     });
-});
+}

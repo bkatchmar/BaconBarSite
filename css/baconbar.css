@@ -44,6 +44,8 @@ main#page_content article.press { padding-left: 0px; }
 main#page_content article section header { width: 100%; }
 main#page_content article section p { margin: 0px 0px 15px; width: 100%; }
 main#page_content article section img { margin: 0px 0px 10px; }
+main#page_content article section span.instagram img { margin: 0px; }
+main#page_content article section img.gallery_image { height: 235px; width: 235px; }
 main#page_content article section img.menu_thumb { padding: 20px 0px 0px 80px; }
 main#page_content article section div.address { font-family: "Frutiger LT W01 65 Bold"; padding: 0px 0px 10px; }
 
@@ -73,7 +75,7 @@ main#page_content div.panels span.panel_column span.panel img.enter-email { curs
 main#page_content div.panels span.panel_column span.panel img.button-previous, main#page_content div.panels span.panel_column span.panel img.button-next { cursor: pointer; display: inline; float: right; padding: 5px 3px; position: relative; z-index: 2; }
 main#page_content div.panels span.panel_column span.panel img.button-next { padding-right: 20px; }
 main#page_content div.panels span.panel_column span.panel img.sandwich {position: relative; top: -30px; padding: 0px 0px; width: 100%; z-index: 0;}
-main#page_content div.panels span.panel_column span.panel img.gallery_image { margin: 0px auto 20px; }
+main#page_content div.panels span.panel_column span.panel img.gallery_image { height: 235px; margin: 0px auto 20px; width: 235px; }
 main#page_content div.panels span.panel_column span.panel a:link { color: #FFF; text-decoration: underline; }
 main#page_content div.panels span.panel_column span.panel a:visited { color: #FFF; }
 main#page_content div.panels span.panel_column span.panel.nowood { background: none; margin-top: 0px; padding-top: 0px; position: relative; top: -4px; }
