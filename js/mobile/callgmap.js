@@ -18,7 +18,7 @@
             },
             events: {
                 click: function () {
-                    window.open("https://www.google.com/maps/preview#!q=Burke's+Bacon+Bar&data=!4m15!2m14!1m13!1s0x880e2cacf9746299%3A0xc06f947a9405b496!3m8!1m3!1d893!2d-87.625409!3d41.892944!3m2!1i1680!2i924!4f13.1!4m2!3d41.892946!4d-87.625533");
+                    window.open("https://www.google.com/maps/preview#!q=610+NORTH+RUSH+ST+CHICAGO,+IL+60611&data=!4m15!2m14!1m13!1s0x880e2cacf9746299%3A0xc06f947a9405b496!3m8!1m3!1d893!2d-87.625409!3d41.892944!3m2!1i1680!2i924!4f13.1!4m2!3d41.892946!4d-87.625533");
                 }
             }
         }

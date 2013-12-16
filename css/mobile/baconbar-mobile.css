@@ -22,9 +22,9 @@ header#primary div.specials span.follow { display: inline-block; font-size: 30px
 header#primary div.place-order a:link, header#primary div.place-order a:visited { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 32px; font-weight: bold; margin: 60px auto 30px auto; padding: 35px 35px; text-decoration: none; text-transform: uppercase; width: 430px; }
 
 /* Galleria Overrides */
-header#primary div.hero div#galleria div.galleria-container.notouch { height: 100% !important; }
-header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image { height: 100% !important; }
-header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image img { height: 100% !important; }
+header#primary div.hero div#galleria div.galleria-container.notouch, header#primary div.hero div#galleria div.galleria-container.touch { height: 100% !important; }
+header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image, header#primary div.hero div#galleria div.galleria-container.touch div.galleria-image { height: 100% !important; }
+header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image img, header#primary div.hero div#galleria div.galleria-container.touch div.galleria-image img { height: 100% !important; }
 
 /* Main */
 div#main { font-family: "TradeGothicW01-BoldExte"; }
