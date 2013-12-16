@@ -8,6 +8,7 @@
         zip: "div.contact-form input#zip",
         apiCall: "../api/api.aspx"
     });
+    jQuery("div.hero div#galleria").denihanSlideGallery({ "theme": "../js/mobile/galleria/galleria.classic.min.js", "autoplay": 5000 });
 });
 
 ; (function ($) {

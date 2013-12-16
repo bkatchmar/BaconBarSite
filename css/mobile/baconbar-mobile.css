@@ -13,13 +13,18 @@ header#primary { font-family: "Frutiger LT W01 65 Bold"; margin: 0px auto; paddi
 header#primary div.address-info { background-color: #401502; margin: 10px 0px 10px; font-size: 26px; padding: 20px 0px; text-transform: uppercase; max-height: 1000000px; }
 header#primary div.address-info span.divider { padding: 0px 5px; }
 header#primary div.hero { height: 334px; position: relative; }
-header#primary div.hero div.gallery { height: 100%; }
-header#primary div.hero div.gallery img { height: 100%; width: 100%; }
+header#primary div.hero div#galleria { height: 100%; }
+header#primary div.hero div#galleria img { height: 100%; width: 100%; }
 header#primary div.specials-container { height: 50px; }
 header#primary div.specials { color: #FFF; float: right; font-family: "TradeGothicW01-BoldExte"; padding: 5px 10px; }
 header#primary div.specials img { height: 50px; width: 50px; }
 header#primary div.specials span.follow { display: inline-block; font-size: 30px; height: 50px; }
 header#primary div.place-order a:link, header#primary div.place-order a:visited { background-color: #F7A08F; color: #401502; display: block; font-family: "TradeGothicW01-BoldExte"; font-size: 32px; font-weight: bold; margin: 60px auto 30px auto; padding: 35px 35px; text-decoration: none; text-transform: uppercase; width: 430px; }
+
+/* Galleria Overrides */
+header#primary div.hero div#galleria div.galleria-container.notouch { height: 100% !important; }
+header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image { height: 100% !important; }
+header#primary div.hero div#galleria div.galleria-container.notouch div.galleria-image img { height: 100% !important; }
 
 /* Main */
 div#main { font-family: "TradeGothicW01-BoldExte"; }
