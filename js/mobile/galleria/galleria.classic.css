@@ -66,20 +66,25 @@ body {
     background: url(classic-loader.gif) no-repeat 2px 2px;
 }
 .galleria-info {
-    width: 50%;
-    top: 15px;
-    left: 15px;
+    background-color: #f79c89;
+    width: 30%;
+    bottom: 0px;
+    left: 0px;
     z-index: 2;
     position: absolute;
+    font-size: 28px;
+}
+div.galleria-info-link {
+    display: none !important; 
 }
 .galleria-info-text {
-    background-color: #000;
+    background-color: #f79c89;
     padding: 12px;
-    display: none;
+    display: block !important;
     /* IE7 */ zoom:1;
 }
 .galleria-info-title {
-    font: bold 12px/1.1 arial,sans-serif;
+    font: bold 28px/1.1 arial,sans-serif;
     margin: 0;
     color: #fff;
     margin-bottom: 7px;
@@ -88,6 +93,7 @@ body {
     font: italic 12px/1.4 georgia,serif;
     margin: 0;
     color: #bbb;
+    display: none !important;
 }
 .galleria-info-close {
     width: 9px;
@@ -99,7 +105,7 @@ body {
     opacity: .5;
     filter: alpha(opacity=50);
     cursor: pointer;
-    display: none;
+    display: none !important;
 }
 .notouch .galleria-info-close:hover{
     opacity:1;

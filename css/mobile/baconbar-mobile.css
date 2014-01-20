@@ -12,6 +12,8 @@ input[type="text"] { background-color: #FCD7CE; border: none; color: #481301; fo
 header#primary { font-family: "Frutiger LT W01 65 Bold"; margin: 0px auto; padding: 20px 0px 10px; text-align: center; width: 100%; }
 header#primary div.address-info { background-color: #401502; margin: 10px 0px 10px; font-size: 26px; padding: 20px 0px; text-transform: uppercase; max-height: 1000000px; }
 header#primary div.address-info span.divider { padding: 0px 5px; }
+header#primary div.address-info.top { margin: 10px 0px 0px; }
+header#primary div.address-info.bottom { margin: 0px 0px 10px; }
 header#primary div.hero { height: 334px; position: relative; }
 header#primary div.hero div#galleria { height: 100%; }
 header#primary div.hero div#galleria img { height: 100%; width: 100%; }
