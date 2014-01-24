@@ -44,7 +44,7 @@
             var pageName = sectionsInUrl[sectionsInUrl.length - 1];
             return (pages[pageName] ? pages[pageName] : pages["index"]);
         },
-        addNewSpSpanTagToFeedGallery: function (srcOfImage) {
+        addNewSpSpanTagToFeedGallery: function (srcOfImage, urlToImage) {
             var newSpanTag = jQuery("<span></span>");
             newSpanTag.attr("class", "sp");
 
@@ -52,6 +52,13 @@
             imageToAppend.attr("src", srcOfImage);
             imageToAppend.attr("alt", "Burkes Bacon Bar Image From Instagram");
             imageToAppend.attr("class", "gallery_image");
+
+            if (urlToImage) {
+                imageToAppend.attr("data-denihan-url", urlToImage);
+                imageToAppend.click(function () {
+                    window.open(urlToImage);
+                });
+            }
 
             newSpanTag.append(imageToAppend);
 

@@ -45,7 +45,7 @@
     }
 
     // Hero Pig Plugin
-    jQuery("main#page_content div.pignav").denihanPigGallery();
+   jQuery("main#page_content div.pignav").denihanPigGallery();
 
     modernizr();
 });
