@@ -39,6 +39,7 @@ main#page_content article a:visited { background-color: #F7A08F; color: #401502;
 main#page_content div.pignav { cursor: pointer; }
 main#page_content div.pignav-centered { text-align: center; }
 main#page_content div.pignav-right { text-align: right; }
+main#page_content div.pignav-centered.off { display: none; }
 
 main#page_content article section { display: inline-block; margin: 0px; padding: 0px 20px 0px 0px; vertical-align: top; width: 45%; }
 main#page_content article.press { padding-left: 0px; }
@@ -67,6 +68,7 @@ main#page_content article section a.menu-pdf-link { background-color: transparen
 /* Home Page Panels */
 main#page_content div.panels { text-align: center; width: 100%; padding: 0px 0px 0px 5px; }
 main#page_content div.panels span.panel_column { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 33%; }
+main#page_content div.panels span.panel_columnlonger { display: inline-block; margin: 0px; padding: 0px; vertical-align: top; width: 100%; }
 main#page_content div.panels span.panel_column span.panel { background: url(../img/core/feed-burke-woodbg.png) repeat 0px 0px; display: inline-block; font-size: 10pt; margin: 0px 0px 10px; padding-top: 0px; vertical-align: top; width: 100%; }
 main#page_content div.panels span.panel_column span.panel h1 { font-family: "TradeGothicW01-BoldExte"; font-size: 16px; font-weight: normal; margin: 0px; padding: 10px 10px; position: relative; text-align: left; text-transform: uppercase; z-index: 1; }
 main#page_content div.panels span.panel_column span.panel h1 a:link,
@@ -84,6 +86,7 @@ main#page_content div.panels span.panel_column span.panel a:visited { color: #FF
 main#page_content div.panels span.panel_column span.panel.nowood { background: none; margin-top: 0px; padding-top: 0px; position: relative; top: -4px; }
 main#page_content div.panels span.panel_column span.panel.nowood h1 { background-color: #401502; opacity: 0.9; padding-top: 0px; }
 main#page_content div.panels span.panel_column span.panel.larger { min-height: 335px; }
+main#page_content div.panels span.panel_column span.panel.larger.wider { width: 600px; }
 main#page_content div.panels span.panel_column span.panel.smaller { min-height: 190px; }
 
 /* Footer Specifics */
