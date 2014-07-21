@@ -45,10 +45,7 @@ Partial Public Class api_api
         objEmail.Body = "<div>Name: " & extractedFromObject.name & "</div><div>Phone: " & extractedFromObject.phone & "</div><div>Email: " & extractedFromObject.email & "</div>"
         objEmail.IsBodyHtml = True
 
-        objSMTP.Host = "outlook.office365.com"
-        objSMTP.Port = 587
-        objSMTP.EnableSsl = True
-        objSMTP.Credentials = New System.Net.NetworkCredential("primehouse@jameshotels.com", "Ph24!7r6")
+        objSMTP.Host = "192.168.99.50"
         objSMTP.Send(objEmail)
 
         ' Return Object

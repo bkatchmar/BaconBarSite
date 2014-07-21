@@ -117,7 +117,7 @@ function preload(arrayOfImages) {
         function initialize($el) {
             // Run this in the event we detect a mobile browser
             if(amUsingMobileBrowser() || settings.overrideIsMobile) {
-                window.location="/mobile/index_02.htm";
+                window.location="/mobile/index.htm";
             }
         }
 
